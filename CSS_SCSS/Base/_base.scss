@@ -8,6 +8,10 @@ Roboto pour texte
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 /**********LOADING**********/
 .loading{
     width: 100%;
@@ -216,4 +220,137 @@ Roboto pour texte
         font-size: 20px;
         font-weight: 700;
     }
+}
+/*******************************************************************/
+/*******************************************************************/
+
+/**********SECTION 3**********/
+#section3{
+    width: 100%;
+    background-color: #f6f6f6;
+    height: 1500px;
+    @include flexCenter;
+}
+
+.container{
+    width: 90%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+
+    &__title{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        height: 1300px;
+        justify-content: space-around;
+    }
+
+    &__card{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        box-shadow: $button-shadow;
+
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0px 8px 12px 1px rgb(165, 165, 165);
+        }
+    }
+
+    &__image{
+        width: 100%;
+        height: 210px;
+        position: relative;
+    }
+
+    &__image img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    &__content{
+        width: 100%;
+        height: 90px;
+        position: relative;
+    }
+
+    &__title2{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: black;
+        font-family: 'roboto',sans-serif;
+        font-size: 22px;
+    }
+
+    &__location{
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        color: black;
+        font-family: 'roboto',sans-serif;
+        font-size: 20px;
+    }
+
+    &__hearts{
+        @include flexCenter;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+
+        .heart{
+            width: 30px;
+        }
+
+        .heart-full{
+            fill: white;
+            stroke-width: 30px;
+            stroke: black;
+            position: absolute;
+        }
+
+        .heart-empty{
+            stroke: none;
+            fill: url(#text-fill);
+            opacity: 0;
+            z-index: 3;
+            width: 35px;
+            transition: opacity 0.1s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/*Pastille nouveau deux restaurants*/
+.nouveau{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    border-radius: 2px;
+    @include flexCenter;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    color: rgb(39, 155, 39);
+    background-color: $color-tertiary;
+    top: 15px;
+    right: 10px;
+}
+
+
+svg{
+    width: 20px;
 }

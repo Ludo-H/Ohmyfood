@@ -97,6 +97,10 @@ Roboto pour texte
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /**********LOADING**********/
 .loading {
   width: 100%;
@@ -455,5 +459,182 @@ Roboto pour texte
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 700;
+}
+
+/*******************************************************************/
+/*******************************************************************/
+/**********SECTION 3**********/
+#section3 {
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 1500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 90%;
+  height: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.container__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__card {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 8px 12px 1px #cccccc;
+          box-shadow: 0px 8px 12px 1px #cccccc;
+}
+
+.container__card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0px 8px 12px 1px #a5a5a5;
+          box-shadow: 0px 8px 12px 1px #a5a5a5;
+}
+
+.container__image {
+  width: 100%;
+  height: 210px;
+  position: relative;
+}
+
+.container__image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.container__content {
+  width: 100%;
+  height: 90px;
+  position: relative;
+}
+
+.container__title2 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  color: black;
+  font-family: 'roboto',sans-serif;
+  font-size: 22px;
+}
+
+.container__location {
+  position: absolute;
+  left: 20px;
+  top: 50px;
+  color: black;
+  font-family: 'roboto',sans-serif;
+  font-size: 20px;
+}
+
+.container__hearts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.container__hearts .heart {
+  width: 30px;
+}
+
+.container__hearts .heart-full {
+  fill: white;
+  stroke-width: 30px;
+  stroke: black;
+  position: absolute;
+}
+
+.container__hearts .heart-empty {
+  stroke: none;
+  fill: url(#text-fill);
+  opacity: 0;
+  z-index: 3;
+  width: 35px;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.container__hearts .heart-empty:hover {
+  opacity: 1;
+}
+
+/*Pastille nouveau deux restaurants*/
+.nouveau {
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'roboto', sans-serif;
+  font-weight: 700;
+  color: #279b27;
+  background-color: #99E2D0;
+  top: 15px;
+  right: 10px;
+}
+
+svg {
+  width: 20px;
 }
 /*# sourceMappingURL=style.css.map */
