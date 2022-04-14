@@ -196,8 +196,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: disappear 0s 0s linear forwards;
-          animation: disappear 0s 0s linear forwards;
+  -webkit-animation: disappear 2s 2s linear forwards;
+          animation: disappear 2s 2s linear forwards;
 }
 
 .loading i {
@@ -740,6 +740,30 @@ a {
 
 .container__hearts .heart-empty:hover {
   opacity: 1;
+}
+
+@media screen and (min-width: 1100px) {
+  #section3 {
+    height: 850px;
+  }
+  .container {
+    height: 780px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 700px;
+  }
+  .container__card {
+    width: 45%;
+  }
 }
 
 /*Pastille nouveau deux restaurants*/
