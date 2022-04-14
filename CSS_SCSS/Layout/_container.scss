@@ -1,0 +1,50 @@
+/**********FOOTER**********/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #383838;
+    @include flexCenter;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 150px;
+
+    &__logo a{
+        font-family: 'shrikhand', sans-serif;
+        color: white;
+        font-size: 20px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+    }
+
+    &__line{
+        display: flex;
+        flex-direction: row;
+
+        i{
+            width: 30px;
+            color: white;
+        }
+    }
+
+    &__description{
+        font-family: 'roboto',sans-serif;
+        color: white;
+        font-size: 16px;
+        font-weight: none;
+        opacity: 0.8;
+
+        a{
+            color: white;
+        }
+    }
+}
