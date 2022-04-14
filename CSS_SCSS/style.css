@@ -1,6 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+header {
+  width: 100%;
+  height: 120px;
+}
+
+.logo {
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 0 1px 5px 1px grey;
+          box-shadow: 0 1px 5px 1px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__img {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__img a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 40px;
+}
+
+.map {
+  width: 100%;
+  height: 50px;
+  background-color: #e9e9e9;
+  -webkit-box-shadow: inset 1px 5px 4px -5px grey;
+          box-shadow: inset 1px 5px 4px -5px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__content {
+  width: 210px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.map__content i {
+  position: absolute;
+  left: 0px;
+  font-size: 18px;
+  top: 10px;
+}
+
+.map__description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /*
 Shrikhand pour logo et titres
 Roboto pour texte
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /*# sourceMappingURL=style.css.map */
