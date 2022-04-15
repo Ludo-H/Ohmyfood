@@ -667,6 +667,28 @@ a{
 }
 
 
+/***********BOUCLE D'APPARITION****************/
+@for $i from 1 through 3{
+    .container__plats__choice:nth-child(#{$i}){
+        animation: appear 0.8s $i * 0.2s linear both;
+    }
+}
+
+@keyframes appear {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    75%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
 
 
 /**************************NOTE ENCHANTEE***************************/
