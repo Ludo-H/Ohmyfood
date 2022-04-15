@@ -653,6 +653,10 @@ a{
     }
 }
 
+.button__order{
+    @include flexCenter;
+}
+
 @keyframes spin {
     from{
         transform: rotate(0, 0);
