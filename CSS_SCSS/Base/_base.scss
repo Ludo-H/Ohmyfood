@@ -491,7 +491,7 @@ a{
     margin-top: -75px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     z-index: 3;
 
     &__head{
@@ -501,6 +501,7 @@ a{
         align-items: center;
         position: relative;
         height: 50px;
+        margin-bottom: 20px;
     }
 
     &__title{
@@ -542,13 +543,14 @@ a{
     &__foods{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        height: 1200px;
+        justify-content: flex-start;
+        max-height: 1200px;
     }
 
     &__card{
-        height: 350px;
+        height: auto;
         @include flexCenterColumn;
+        justify-content: flex-start;
     }
 
     &__family{
@@ -556,6 +558,7 @@ a{
         text-transform: uppercase;
         font-size: 20px;
         position: relative;
+        margin-bottom: 20px;
 
         &::after{
             content: "";
@@ -569,9 +572,9 @@ a{
     }
 
     &__choices{
-        height: 280px;
+        max-height: 400px;
         @include flexCenterColumn;
-        justify-content: space-between;
+        justify-content: flex-start;
         
     }
 
@@ -588,6 +591,7 @@ a{
         position: relative;
         overflow: hidden;
         cursor: pointer;
+        margin-bottom: 20px;
 
         &:hover .validation{
             margin-right: 0;
@@ -758,6 +762,10 @@ a{
 
     .validation__price{
         width: 50px;
+    }
+
+    .button__order{
+        margin-left: 38%;
     }
 }
 
