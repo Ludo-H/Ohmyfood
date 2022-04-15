@@ -641,7 +641,7 @@ a{
     }
     
     &__icon{
-        width: 50%;
+        width: 75px;
         text-align: center;
         padding-top: 30px;
         color: white;
@@ -689,6 +689,45 @@ a{
 }
 
 
+@media screen and (min-width: 1100px){
+    .container__plats{
+        width: 1100px;
+        height: 600px;
+
+        &__foods{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__card{
+            width: 33%;
+        }
+
+        &__choices{
+            width: 100%;
+        }
+
+        &__dish{
+            width: 270px;
+        }
+
+        &__name{
+            font-size: 18px;
+        }
+
+        &__description{
+            font-size: 14px;
+        }
+    }
+
+    .validation{
+        width: 125px;
+    }
+
+    .validation__price{
+        width: 50px;
+    }
+}
 
 
 /**************************NOTE ENCHANTEE***************************/
