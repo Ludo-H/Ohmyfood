@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 120px;
+    height: 70px;
 }
 
 .logo{
@@ -8,6 +8,8 @@ header{
     height: 70px;
     box-shadow: 0 1px 5px 1px grey;
     @include flexCenter;
+    position: relative;
+
     &__img{
         width: 50%;
         @include flexCenter;
@@ -18,30 +20,13 @@ header{
             font-size: 40px;
         }
     }
+
+    &__arrow-back{
+        position: absolute;
+        left: 30px;
+        font-size: 25px;
+        font-weight: bold;
+    }
 }
 
-.map{
-    width: 100%;
-    height: 50px;
-    background-color:#e9e9e9 ;
-    box-shadow: inset 1px 5px 4px -5px grey;
-    @include flexCenter;
-    &__content{
-        width: 210px;
-        height: 40px;
-        @include flexCenter;
-        position: relative;
-        i{
-            position: absolute;
-            left: 0px;
-            font-size: 18px;
-            top: 10px;
-        }
-    }
-    &__description{
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-        color: rgb(66, 66, 66);
-    }
-}
+
