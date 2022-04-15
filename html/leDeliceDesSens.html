@@ -17,18 +17,229 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Le délice des sens' - ohmyfood!</title>
 </head>
-<body>
     <!----------HEADER---------->
     <header>
-        <nav></nav>
+        <div class="logo">
+            <div class="logo__arrow-back">
+                <a href="../html/index.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <div class="logo__img">
+                <a href="index.html">ohmyfood</a>
+            </div>
+        </div>
     </header>
     <!----------MAIN---------->
     <main>
     <!----------SECTION 1---------->
-        <section></section>
+        <div class="image__resto">
+            <img src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Restaurant Le délice des sens">
+        </div>
+        <section id="section-presentationPlats">
+                <div class="container__plats">
+                    <div class="container__plats__head">
+                        <h1 class="container__plats__title">Le délice des sens</h1>
+                        <div class="container__plats__hearts2">
+                            <svg class="heart heart-full" viewBox="-20 0 550 550"  xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                            c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                            c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                            s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                            C512,93.417,453.532,30,376,30z"/>
+                                <defs>
+                                    <linearGradient id="text-fill">
+                                        <stop offset="0%" stop-color="#9356DC" />
+                                        <stop offset="100%" stop-color="#FF79DA" />
+                                    </linearGradient>
+                                </defs>                                   
+                            </svg>
+                            <svg class="heart heart-empty" viewBox="-20 0 550 550"  xml:space="preserve">
+                                <path d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                                            c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                                            c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                                            s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                                            C512,93.417,453.532,30,376,30z"/>
+                                <defs>
+                                    <linearGradient>
+                                        <stop offset="0%" stop-color="#9356DC" />
+                                        <stop offset="100%" stop-color="#FF79DA" />
+                                    </linearGradient>
+                                </defs>                                   
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="container__plats__foods">
+                        <div class="container__plats__card">
+                            <p class="container__plats__family">Entrées</p>
+                            <div class="container__plats__choices">
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Tartare de thon</h2>
+                                        <p class="container__plats__description">Assaisonné au yuzu</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            25€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Bouchée de homard croustillant </h2>
+                                        <p class="container__plats__description">Et sa farandole de petits légumes</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            35€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Velouté de cèpes</h2>
+                                        <p class="container__plats__description">Aux truffes</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            20€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__plats__card">
+                            <p class="container__plats__family">Plats</p>
+                            <div class="container__plats__choices">
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Poulet rôti aux herbes de Provence </h2>
+                                        <p class="container__plats__description">Et sa crème de truffe</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            40€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Langouste rôtie</h2>
+                                        <p class="container__plats__description">Et ses légumes de saison</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            35€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Côte de boeuf Angus</h2>
+                                        <p class="container__plats__description">Et sa purée de panais</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            44€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__plats__card">
+                            <p class="container__plats__family">Desserts</p>
+                            <div class="container__plats__choices">
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Farandole de desserts</h2>
+                                        <p class="container__plats__description">Du chef</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            18€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Crème brulée</h2>
+                                        <p class="container__plats__description">Revisitée</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            22€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="container__plats__choice">
+                                    <div class="container__plats__dish">
+                                        <h2 class="container__plats__name">Tiramisu</h2>
+                                        <p class="container__plats__description">À la noisette</p>
+                                    </div>
+                                    <div class="validation">
+                                        <div class="validation__price">
+                                            23€
+                                        </div>
+                                        <div class="validation__icon">
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button__order">
+                            <div class="book__button">
+                                <p class="book__button__description">Commander</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    <!----------SECTION 2---------->
     </main>
     <!----------FOOTER---------->
     <footer>
+        <div class="footer">
+            <div class="footer__logo"><a href="index.html">ohmyfood</a></div>
+            <div class="footer__content">
+                <div class="footer__line">
+                    <i class="fas fa-utensils"></i>
+                    <h3 class="footer__description">Proposer un restaurant</h3>
+                </div>
+                <div class="footer__line">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3 class="footer__description">Devenir partenaire</h3>
+                </div>
+                <div class="footer__line">
+                    <h3 class="footer__description">Mentions légales</h3>
+                </div>
+                <div class="footer__line">
+                    <h3 class="footer__description"><a href="mailto:contact@ohmyfood.com">Contact</a></h3>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
