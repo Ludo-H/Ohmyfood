@@ -117,7 +117,6 @@ footer {
   font-family: 'roboto',sans-serif;
   color: white;
   font-size: 16px;
-  font-weight: none;
   opacity: 0.8;
 }
 
@@ -1095,8 +1094,8 @@ a {
 /**********ANIMATION ICONE**********/
 @-webkit-keyframes spin {
   from {
-    -webkit-transform: rotate(0, 0);
-            transform: rotate(0, 0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(360deg);
@@ -1105,8 +1104,8 @@ a {
 }
 @keyframes spin {
   from {
-    -webkit-transform: rotate(0, 0);
-            transform: rotate(0, 0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(360deg);
@@ -1235,11 +1234,4 @@ a {
     margin-left: 38%;
   }
 }
-
-/**************************NOTE ENCHANTEE***************************/
-/********************************************************************/
-/**************************A LA FRANCAISE***************************/
-/********************************************************************/
-/**************************DELICE DES SENS***************************/
-/********************************************************************/
 /*# sourceMappingURL=style.css.map */
