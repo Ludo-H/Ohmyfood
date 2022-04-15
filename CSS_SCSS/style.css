@@ -1085,6 +1085,7 @@ a {
           align-items: center;
 }
 
+/**********ANIMATION ICONE**********/
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0, 0);
@@ -1095,7 +1096,6 @@ a {
             transform: rotate(360deg);
   }
 }
-
 @keyframes spin {
   from {
     -webkit-transform: rotate(0, 0);
@@ -1157,6 +1157,39 @@ a {
   }
 }
 
+/**********MEDIA 430 PX**********/
+@media screen and (max-width: 430px) {
+  .container__plats__title {
+    font-size: 23px;
+  }
+  .container__plats__dish {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container__plats__name {
+    font-size: 16px;
+  }
+  .container__plats__description {
+    font-size: 14px;
+  }
+}
+
+/**********MEDIA 800 PX**********/
+@media screen and (min-width: 800px) {
+  .container__plats {
+    margin-top: -10px;
+  }
+}
+
+/**********MEDIA 1100 PX**********/
 @media screen and (min-width: 1100px) {
   .container__plats {
     width: 1100px;

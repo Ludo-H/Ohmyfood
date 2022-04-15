@@ -657,6 +657,9 @@ a{
     @include flexCenter;
 }
 
+
+/**********ANIMATION ICONE**********/
+
 @keyframes spin {
     from{
         transform: rotate(0, 0);
@@ -689,6 +692,35 @@ a{
 }
 
 
+/**********MEDIA 430 PX**********/
+@media screen and (max-width: 430px){
+    .container__plats__title{
+        font-size: 23px;
+    }
+
+    .container__plats__dish{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container__plats__name{
+        font-size: 16px;
+    }
+
+    .container__plats__description{
+        font-size: 14px;
+    }
+}
+
+/**********MEDIA 800 PX**********/
+@media screen and (min-width: 800px){
+    .container__plats{
+        margin-top: -10px;
+    }
+}
+
+/**********MEDIA 1100 PX**********/
 @media screen and (min-width: 1100px){
     .container__plats{
         width: 1100px;
