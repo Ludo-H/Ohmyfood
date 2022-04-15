@@ -592,6 +592,10 @@ a{
         &:hover .validation{
             margin-right: 0;
         }
+
+        &:hover i{
+            animation: spin 0.5s 0.25s linear;
+        }
     }
 
     &__dish{
@@ -635,14 +639,27 @@ a{
         align-items: flex-end;
         padding-bottom: 10px;
     }
+    
+    &__icon{
+        width: 50%;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-size: 25px;
+        background-color: $color-tertiary;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: $color-tertiary;
+    }
 }
 
-.fa-check-circle{
-    width: 50%;
-    background-color: $color-tertiary;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    background-color: $color-tertiary;
+@keyframes spin {
+    from{
+        transform: rotate(0, 0);
+    }
+    to{
+        transform: rotate(360deg)
+    }
 }
 
 

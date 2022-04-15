@@ -1002,6 +1002,11 @@ a {
   margin-right: 0;
 }
 
+.container__plats__choice:hover i {
+  -webkit-animation: spin 0.5s 0.25s linear;
+          animation: spin 0.5s 0.25s linear;
+}
+
 .container__plats__dish {
   font-family: 'roboto', sans-serif;
   height: 50px;
@@ -1056,12 +1061,38 @@ a {
   padding-bottom: 10px;
 }
 
-.fa-check-circle {
+.validation__icon {
   width: 50%;
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-size: 25px;
   background-color: #99E2D0;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99E2D0;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0, 0);
+            transform: rotate(0, 0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0, 0);
+            transform: rotate(0, 0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /**************************NOTE ENCHANTEE***************************/
