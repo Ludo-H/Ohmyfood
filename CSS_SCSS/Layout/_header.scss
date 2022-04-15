@@ -8,7 +8,6 @@ header{
     height: 70px;
     box-shadow: 0 1px 5px 1px grey;
     @include flexCenter;
-    position: relative;
 
     &__img{
         width: 50%;

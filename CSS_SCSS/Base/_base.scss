@@ -463,6 +463,45 @@ a{
 /**************************PALETTE DU GOUT***************************/
 /********************************************************************/
 
+/**********SECTION 1**********/
+.image__resto{
+    width: 100%;
+    height: 50vh;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+#section-presentationPlats{
+    width: 100%;
+    height: 100%;
+    @include flexCenter;
+}
+
+.container__plats{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 3;
+
+    &__head{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+
 
 /**************************NOTE ENCHANTEE***************************/
 /********************************************************************/
